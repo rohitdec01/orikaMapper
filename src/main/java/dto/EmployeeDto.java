@@ -4,6 +4,7 @@ public class EmployeeDto {
     private int id;
     private String name;
     private String familyName;
+    private String address;
 
     public int getId() {
         return id;
@@ -29,12 +30,21 @@ public class EmployeeDto {
         this.familyName = familyName;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     @Override
     public String toString() {
         return "EmployeeDto{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", familyName='" + familyName + '\'' +
+                ", address='" + address + '\'' +
                 '}';
     }
 }
